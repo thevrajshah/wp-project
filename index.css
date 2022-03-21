@@ -1,0 +1,13 @@
+body{
+    background: blueviolet;
+    color: whitesmoke;
+    text-align: center;
+}
+
+a{
+    color: peachpuff;
+}
+
+a:hover{
+    color:aliceblue; 
+}
