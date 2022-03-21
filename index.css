@@ -6,8 +6,32 @@ body{
 
 a{
     color: peachpuff;
+    transition: 0.2s;
 }
 
 a:hover{
     color:aliceblue; 
+    transform: rotate(120deg);
+}
+
+table{
+    margin: 10px auto;
+}
+
+table,th,td{
+    border: 1px solid wheat;
+    border-collapse: collapse;
+}
+
+th,td{
+    padding:10px;
+}
+
+ol{
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
+}
+ol li{
+margin: 4px 0;
 }

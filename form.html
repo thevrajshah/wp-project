@@ -10,23 +10,20 @@
     <link rel="stylesheet" href="form.css">
 </head>
 <script>
-    function showResponse() {
+    function showResponse(e) {
 
-        let form = document.forms["resource"]
-        console.log(form);
-        return false
     }
 </script>
 
 <body>
     <h1>Learning Resource Library</h1>
     <h3>Create Resource</h3>
-    <form name="resource" onsubmit="showResponse()">
-        <label for="">Your Email</label>
-        <input type="email" name="email" required>
-        <br>
+    <form name="resource">
         <label for="">Your Name</label>
         <input type="text" name="student_name" required>
+        <br>
+        <label for="">Your Email</label>
+        <input type="email" name="email" required>
         <br>
         <label for="">Resource Title</label>
         <input type="text" name="title" required>
@@ -37,6 +34,8 @@
         <button type="submit">Add Resource</button>
         <button type="reset">Reset</button>
     </form>
+    <button style="margin: 10px auto" onclick="history.go(-1)">
+        < Back</button>
 </body>
 
 </html>
