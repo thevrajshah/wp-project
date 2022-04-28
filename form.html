@@ -15,12 +15,12 @@
     }
 </script>
 
-<body>
+<body style="margin-top: 3rem;">
     <h1>Learning Resource Library</h1>
     <h3>Create Resource</h3>
-    <form name="resource">
+    <form name="resource" method="post" action="myForm.php">
         <label for="">Your Name</label>
-        <input type="text" name="student_name" required>
+        <input type="text" name="name" required>
         <br>
         <label for="">Your Email</label>
         <input type="email" name="email" required>
@@ -36,6 +36,7 @@
     </form>
     <button style="margin: 10px auto" onclick="history.go(-1)">
         < Back</button>
+
 </body>
 
 </html>
