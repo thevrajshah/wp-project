@@ -1,5 +1,7 @@
 <html>
-<body>
+<body style="background-color: aqua">
+    <div style="text-align: center; margin-top: 40vh">
+    <h1>
     <?php 
         $name = $_POST["name"];
         $email = $_POST["email"];
@@ -24,7 +26,7 @@
     VALUES ('','$name', '$email', '$title', '$url')";
 
     if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+    echo "New resource added successfully";
     } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
     }
@@ -33,6 +35,10 @@
     ?>
     <br>
     <br>
+    </h1>
+    <h3>
     <a href="http://localhost/wp-project/index.php">Show Resources</a>
+    </h3>
+    </div>
 </body>
 </html>
